@@ -21,16 +21,28 @@ public class TicTacToeGame {
 	}
 
 	static class CellMarkedValue implements Serializable {
+		/**
+		 * 
+		 */
+		private static final long serialVersionUID = 1L;
 		int cellId;
 		Player player;
 	}
 
 	static class WinnerValue implements Serializable {
+		/**
+		 * 
+		 */
+		private static final long serialVersionUID = 1L;
 		Player player;
 		int[] pos;
 	}
 
 	static class Event implements Serializable {
+		/**
+		 * 
+		 */
+		private static final long serialVersionUID = 1L;
 		EventType type;
 		Object data;
 	}
